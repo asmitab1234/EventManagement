@@ -1,7 +1,7 @@
 import { Image, StatusBar, StyleSheet, Text, TextInput, View, TouchableOpacity, Pressable } from 'react-native'
 import React, { useEffect } from 'react'
 import { useNavigation } from '@react-navigation/native'
-// import {FontAwesome} from 'react-native-vector-icons'
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
 const SignUp = () => {
     const navigation = useNavigation()
@@ -39,13 +39,12 @@ const SignUp = () => {
 
             <TouchableOpacity
                 style={styles.imgBox}>
-{/* <FontAwesome
-name='gallery'
-/> */}
+                <FontAwesome name="picture-o" size={24} color="#000" />
             </TouchableOpacity>
 
             <View style={styles.buttonContainer}>
-                <TouchableOpacity style={styles.buttonStyle}>
+                <TouchableOpacity style={styles.buttonStyle}
+                    onPress={() => navigation.navigate('AppStack')}>
                     <Text style={styles.buttonText}>Sign Up</Text>
                 </TouchableOpacity>
             </View>
@@ -121,12 +120,12 @@ const styles = StyleSheet.create({
     },
     imgBox: {
         paddingHorizontal: 10,
-        paddingVertical: 8,
+        paddingVertical: 40,
         alignItems: 'center',
         justifyContent: 'center',
         borderWidth: 1,
         borderRadius: 10,
-        marginHorizontal:15,
-        marginVertical:15
+        marginHorizontal: 15,
+        marginVertical: 15
     }
 })

@@ -2447,6 +2447,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-navigation/bottom-tabs@npm:^6.6.1":
+  version: 6.6.1
+  resolution: "@react-navigation/bottom-tabs@npm:6.6.1"
+  dependencies:
+    "@react-navigation/elements": ^1.3.31
+    color: ^4.2.3
+    warn-once: ^0.1.0
+  peerDependencies:
+    "@react-navigation/native": ^6.0.0
+    react: "*"
+    react-native: "*"
+    react-native-safe-area-context: ">= 3.0.0"
+    react-native-screens: ">= 3.0.0"
+  checksum: 07d6da4b91d7f372b67bcb9f1ff97fba96f1fe226bd95d43d7877362ce71d99c6eebe9ca41d84ea8828f055713386262e089a8207a6c849f33bae49b4df4b196
+  languageName: node
+  linkType: hard
+
 "@react-navigation/core@npm:^6.4.17":
   version: 6.4.17
   resolution: "@react-navigation/core@npm:6.4.17"
@@ -2953,6 +2970,7 @@ __metadata:
     "@react-native/eslint-config": 0.75.4
     "@react-native/metro-config": 0.75.4
     "@react-native/typescript-config": 0.75.4
+    "@react-navigation/bottom-tabs": ^6.6.1
     "@react-navigation/native": ^6.1.18
     "@react-navigation/native-stack": ^6.11.0
     "@react-navigation/stack": ^6.4.1
@@ -2965,7 +2983,8 @@ __metadata:
     react: 18.3.1
     react-native: 0.75.4
     react-native-gesture-handler: ^2.20.0
-    react-native-safe-area-context: ^4.11.1
+    react-native-safe-area-context: ^4.14.0
+    react-native-screens: ^4.0.0
     react-native-vector-icons: ^10.2.0
     react-test-renderer: 18.3.1
     typescript: 5.0.4
@@ -7936,6 +7955,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-freeze@npm:^1.0.0":
+  version: 1.0.4
+  resolution: "react-freeze@npm:1.0.4"
+  peerDependencies:
+    react: ">=17.0.0"
+  checksum: 6b4d93209dff04a1f25d9f8e0c56a9a8a80e7889e8e8267299f34449c7e41a9ab90cad24569d03dd7173b56b7496576dba68f71f1d4e5c8be72f0633023668bc
+  languageName: node
+  linkType: hard
+
 "react-is@npm:^16.12.0 || ^17.0.0 || ^18.0.0, react-is@npm:^18.0.0, react-is@npm:^18.3.1":
   version: 18.3.1
   resolution: "react-is@npm:18.3.1"
@@ -7972,13 +8000,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-safe-area-context@npm:^4.11.1":
-  version: 4.11.1
-  resolution: "react-native-safe-area-context@npm:4.11.1"
+"react-native-safe-area-context@npm:^4.14.0":
+  version: 4.14.0
+  resolution: "react-native-safe-area-context@npm:4.14.0"
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: fddb4c72c8ec404602317a3d52c555a5f4173dcb94d8403c8368fb8a556ad41741f87419e052fa26e55a80732abb144f16bb6475d808dff392da5480ff7ec813
+  checksum: 394523434f3c447ff7ace6fddb00fb976b14a1e7bed378eb8ea684a73153962ebcdb51445d9c2052d0d4211f5a69354aafc05875989b7e79bf1c5b592e490438
+  languageName: node
+  linkType: hard
+
+"react-native-screens@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "react-native-screens@npm:4.0.0"
+  dependencies:
+    react-freeze: ^1.0.0
+    warn-once: ^0.1.0
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 9da0f394fa26b7ec30f52fc758d6289b7e5123c7e6446bbce654ae31e07ab6d5488e51c0882a906cddc305b18e3cc96f9bc5631671f4fded38da5ef138b53cfa
   languageName: node
   linkType: hard
 
